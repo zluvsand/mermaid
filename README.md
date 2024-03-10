@@ -146,3 +146,18 @@ stateDiagram
     StateB --> StateD
     StateD --> [*]
 ```
+
+## Pie chart
+```mermaid
+pie title Pie chart 1
+    "Category A" : 0.5
+    "Category B" : 0.2
+    "Category C" : 0.3
+```
+
+```mermaid
+pie title Pie chart 2
+    "Category A" : 2000
+    "Category B" : 500
+    "Category C" : 1000
+```
