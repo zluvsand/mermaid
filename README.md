@@ -84,5 +84,22 @@ gantt
         Task B2: 2024-04-29, 5d
 ```
 
-
+## Class charts
+```mermaid
+classDiagram
+    Class <|-- InstanceA
+    Class <|-- InstanceB
+    Class : +int attribute1
+    Class : +str attribute2
+    Class: +method1()
+    Class: +method2()
+    class InstanceA{
+        +str attribute2A
+        +method3A()
+        +method4A()
+      }
+      class InstanceB{
+        +int attribute3B
+        +method5B()
+      }
 
