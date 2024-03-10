@@ -87,19 +87,19 @@ gantt
 ## Class charts
 ```mermaid
 classDiagram
-    Class <|-- InstanceA
-    Class <|-- InstanceB
-    Class : +int attribute1
-    Class : +str attribute2
-    Class: +method1()
-    Class: +method2()
-    class InstanceA{
+    SuperClass <|-- SubclassA
+    SuperClass <|-- SubclassB
+    SuperClass : +int attribute1
+    SuperClass : +str attribute2
+    SuperClass: +method1()
+    SuperClass: +method2()
+    class SubclassA{
         +str attribute2A
-        +method3A()
-        +method4A()
+        +method1A()
+        +method2A()
       }
-      class InstanceB{
-        +int attribute3B
-        +method5B()
+    class SubclassB{
+        +int attribute1B
+        +method1B()
       }
-
+```
