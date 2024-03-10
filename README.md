@@ -194,3 +194,21 @@ journey
         Activity 1B: 4: Person2
         Activity 1B: 5: Person1
 ```
+
+## Quadrant chart
+```mermaid
+quadrantChart
+    title Quadrant chart
+    x-axis Left x --> Right x
+    y-axis Bottom y --> Top y
+    quadrant-1 Quadrant A
+    quadrant-2 Quadrant B
+    quadrant-3 Quadrant C
+    quadrant-4 Quadrant D
+    Point A: [0.3, 0.6]
+    Point B: [0.4, 0.2]
+    Point C: [0.6, 0.8]
+    Point D: [0.8, 0.3]
+    Point E: [0.2, 0.3]
+    Point F: [0.5, 0.7]
+```
