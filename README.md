@@ -180,3 +180,17 @@ erDiagram
     Item1 }|..|{ Item4: text3
     Item4 }o--o{ Item4: text3
 ```
+
+
+## Journey map
+```mermaid
+journey
+    title Journey 1
+    section Section A
+        Activity 1A: 5: Person1
+        Activity 2A: 3: Person2
+        Activity 3A: 2: Person1, Person2
+    section Section B
+        Activity 1B: 4: Person2
+        Activity 1B: 5: Person1
+```
