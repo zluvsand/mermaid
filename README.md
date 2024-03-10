@@ -171,3 +171,12 @@ Category L2, Category R1, 15
 Category L2, Category R3, 8
 Category L3, Category R3, 20
 ```
+
+## Enterprise relationship diagram
+```mermaid
+erDiagram
+    Item1 ||--o{ Item2: text1
+    Item2 ||--|{ Item3: text2
+    Item1 }|..|{ Item4: text3
+    Item4 }o--o{ Item4: text3
+```
