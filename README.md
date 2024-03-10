@@ -13,12 +13,6 @@ graph LR
     D[Analysis]-->C
 ```
 
-```mermaid
-graph LR
-    A["$$x^2$$"] -->|"$$\sqrt{x+3}$$"| B("$$\frac{1}{2}$$")
-    A -->|"$$\overbrace{a+b+c}^{\text{note}}$$"| C("$$\pi r^2$$")
-```
-
 ## Gantt chart
 ```mermaid
 gantt
