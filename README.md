@@ -44,6 +44,18 @@ sequenceDiagram
     end
 ```
 
+## Timeline
+```mermaid
+timeline
+    title Timeline title
+    2015: EventA
+        : EventB
+    2020: EventC
+    2025: EventD
+        : EventE
+        : EventF
+```
+
 ## Gantt chart
 ```mermaid
 gantt 
