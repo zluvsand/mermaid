@@ -133,3 +133,16 @@ xychart-beta
     y-axis "Y variable" 0 --> 100
     bar [50, 60, 75, 82, 75, 40]
     line [50, 45, 75, 82, 65, 55]
+```
+
+## State diagram
+```mermaid
+stateDiagram
+    [*] --> StateA
+    StateA --> [*]
+
+    StateA --> StateB
+    StateB --> StateA
+    StateB --> StateD
+    StateD --> [*]
+```
