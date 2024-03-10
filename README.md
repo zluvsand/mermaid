@@ -103,3 +103,24 @@ classDiagram
         +method1B()
       }
 ```
+
+## Mindmaps
+```mermaid
+mindmap
+root((Center node))
+    Node1
+        Node1A
+        Node1B
+        Node1C
+    Node2
+        Node2A
+        Node2B
+            Node2B1
+            Node2B2
+    Node3
+        Node3A
+        Node3B
+    Node4
+        Node4A
+            Node4A1    
+```
