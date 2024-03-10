@@ -2,12 +2,12 @@
 
 ## Flow chart
 ```mermaid
-flowchart 
+flowchart LR
     ItemA-->ItemB-->ItemC
 ```
 
 ```mermaid
-graph LR
+graph TB
     A[ItemA]-->B[ItemB]-->C[ItemC]
     A-->C
     D[ItemD]==>C
