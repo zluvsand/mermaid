@@ -161,3 +161,13 @@ pie title Pie chart 2
     "Category B" : 500
     "Category C" : 1000
 ```
+## Sankey chart
+```mermaid
+sankey-beta
+
+Category L1, Category R1, 5
+Category L1, Category R2, 10
+Category L2, Category R1, 15
+Category L2, Category R3, 8
+Category L3, Category R3, 20
+```
