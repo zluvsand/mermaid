@@ -3,14 +3,15 @@
 ## Flow chart
 ```mermaid
 flowchart 
-    Research-->Build-->Deploy
+    ItemA-->ItemB-->ItemC
 ```
 
 ```mermaid
 graph LR
-    A[Experiments]==>B[Deploy]==>C[Value]
+    A[ItemA]-->B[ItemB]-->C[ItemC]
     A-->C
-    D[Analysis]==>C
+    D[ItemD]==>C
+    E[ItemE]-->F[ItemF]-->G[ItemG]
 ```
 
 ## Sequence chart
