@@ -84,7 +84,7 @@ gantt
         Task B2: 2024-04-29, 5d
 ```
 
-## Class charts
+## Class chart
 ```mermaid
 classDiagram
     SuperClass <|-- SubclassA
@@ -104,7 +104,7 @@ classDiagram
       }
 ```
 
-## Mindmaps
+## Mindmap
 ```mermaid
 mindmap
 root((Center node))
@@ -124,3 +124,12 @@ root((Center node))
         Node4A
             Node4A1    
 ```
+
+## Distribution chart
+```mermaid
+xychart-beta
+    title "Distribution chart title"
+    x-axis [Jan, Feb, Mar, Apr, May, Jun]
+    y-axis "Y variable" 0 --> 100
+    bar [50, 60, 75, 82, 75, 40]
+    line [50, 45, 75, 82, 65, 55]
