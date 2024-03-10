@@ -46,23 +46,31 @@ sequenceDiagram
 
 ## Gantt chart
 ```mermaid
-gantt
+gantt 
     title Gantt chart 1
     dateFormat YYYY-MM-DD
-    section Project A
-    Task A: done, task1, 2014-01-06,2014-01-08
-    Task B:active,  task2, after task1, 3d
-    Task B: task3, after task2, 2d
-    Task C: task4, after task3, 1d
+    axisFormat %b %d
+    section Section A
+        Task A1: a1, 2024-04-15, 7d
+        Task A2: after a1, 5d
+    section Section B
+        Task B1: 2024-04-22, 2024-05-02
+        Task B2: 2024-04-29, 5d
 ```
 
 ```mermaid
-gantt
-    title Gantt chart 1
+gantt 
+    title Gantt chart 2
     dateFormat YYYY-MM-DD
-    section Project A
-    Task A: done, task1, 2014-01-06,2014-01-08
-    Task B:active,  task2, after task1, 3d
-    Task B: task3, after task2, 2d
-    Task C: task4, after task3, 1d
+    axisFormat %b %d
+    excludes weekends 2024-04-25
+    section Section A
+        Task A1: done, a1, 2024-04-15, 7d
+        Task A2: active, after a1, 5d
+    section Section B
+        Task B1: active, 2024-04-22, 2024-05-02
+        Task B2: 2024-04-29, 5d
 ```
+
+
+
