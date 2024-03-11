@@ -14,6 +14,18 @@ graph TB
     E[ItemE]-->F[ItemF]-->G[ItemG]
 ```
 
+## State diagram
+```mermaid
+stateDiagram
+    [*] --> StateA
+    StateA --> [*]
+
+    StateA --> StateB
+    StateB --> StateA
+    StateB --> StateD
+    StateD --> [*]
+```
+
 ## Sequence chart
 ```mermaid
 sequenceDiagram
@@ -26,6 +38,7 @@ sequenceDiagram
         ParticipantA->>ParticipantB: Loop text
     end
 ```
+
 ### Use alias and autonumber
 
 ```mermaid
@@ -42,6 +55,35 @@ sequenceDiagram
     loop
         A->>B: Loop text
     end
+```
+
+## Enterprise relationship diagram
+```mermaid
+erDiagram
+    Item1 ||--o{ Item2: text1
+    Item2 ||--|{ Item3: text2
+    Item1 }|..|{ Item4: text3
+    Item4 }o--o{ Item4: text3
+```
+
+## Class chart
+```mermaid
+classDiagram
+    SuperClass <|-- SubclassA
+    SuperClass <|-- SubclassB
+    SuperClass : +int attribute1
+    SuperClass : +str attribute2
+    SuperClass: +method1()
+    SuperClass: +method2()
+    class SubclassA{
+        +str attribute2A
+        +method1A()
+        +method2A()
+      }
+    class SubclassB{
+        +int attribute1B
+        +method1B()
+      }
 ```
 
 ## Timeline
@@ -84,67 +126,17 @@ gantt
         Task B2: 2024-04-29, 5d
 ```
 
-## Class chart
+## Journey map
 ```mermaid
-classDiagram
-    SuperClass <|-- SubclassA
-    SuperClass <|-- SubclassB
-    SuperClass : +int attribute1
-    SuperClass : +str attribute2
-    SuperClass: +method1()
-    SuperClass: +method2()
-    class SubclassA{
-        +str attribute2A
-        +method1A()
-        +method2A()
-      }
-    class SubclassB{
-        +int attribute1B
-        +method1B()
-      }
-```
-
-## Mindmap
-```mermaid
-mindmap
-root((Center node))
-    Node1
-        Node1A
-        Node1B
-        Node1C
-    Node2
-        Node2A
-        Node2B
-            Node2B1
-            Node2B2
-    Node3
-        Node3A
-        Node3B
-    Node4
-        Node4A
-            Node4A1    
-```
-
-## Distribution chart
-```mermaid
-xychart-beta
-    title "Distribution chart title"
-    x-axis [Jan, Feb, Mar, Apr, May, Jun]
-    y-axis "Y variable" 0 --> 100
-    bar [50, 60, 75, 82, 75, 40]
-    line [50, 45, 75, 82, 65, 55]
-```
-
-## State diagram
-```mermaid
-stateDiagram
-    [*] --> StateA
-    StateA --> [*]
-
-    StateA --> StateB
-    StateB --> StateA
-    StateB --> StateD
-    StateD --> [*]
+journey
+    title Journey 1
+    section Section A
+        Activity 1A: 5: Person1
+        Activity 2A: 3: Person2
+        Activity 3A: 2: Person1, Person2
+    section Section B
+        Activity 1B: 4: Person2
+        Activity 1B: 5: Person1
 ```
 
 ## Pie chart
@@ -172,29 +164,6 @@ Category L2, Category R3, 8
 Category L3, Category R3, 20
 ```
 
-## Enterprise relationship diagram
-```mermaid
-erDiagram
-    Item1 ||--o{ Item2: text1
-    Item2 ||--|{ Item3: text2
-    Item1 }|..|{ Item4: text3
-    Item4 }o--o{ Item4: text3
-```
-
-
-## Journey map
-```mermaid
-journey
-    title Journey 1
-    section Section A
-        Activity 1A: 5: Person1
-        Activity 2A: 3: Person2
-        Activity 3A: 2: Person1, Person2
-    section Section B
-        Activity 1B: 4: Person2
-        Activity 1B: 5: Person1
-```
-
 ## Quadrant chart
 ```mermaid
 quadrantChart
@@ -211,4 +180,35 @@ quadrantChart
     Point D: [0.8, 0.3]
     Point E: [0.2, 0.3]
     Point F: [0.5, 0.7]
+```
+
+## Distribution chart
+```mermaid
+xychart-beta
+    title "Distribution chart title"
+    x-axis [Jan, Feb, Mar, Apr, May, Jun]
+    y-axis "Y variable" 0 --> 100
+    bar [50, 60, 75, 82, 75, 40]
+    line [50, 45, 75, 82, 65, 55]
+```
+
+## Mindmap
+```mermaid
+mindmap
+root((Center node))
+    Node1
+        Node1A
+        Node1B
+        Node1C
+    Node2
+        Node2A
+        Node2B
+            Node2B1
+            Node2B2
+    Node3
+        Node3A
+        Node3B
+    Node4
+        Node4A
+            Node4A1    
 ```
