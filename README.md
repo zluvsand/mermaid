@@ -15,21 +15,18 @@ flowchart LR
 ```
 
 ```mermaid
-graph TB
-    A[ItemA]-->B[ItemB]-->C[ItemC]
-    A-->C
-    D[ItemD]==>C
-    E[ItemE]-->F[ItemF]-->G[ItemG]
-```
-
-```mermaid
 graph
-    A[ItemA]-->B[ItemB]-->C[ItemC]
-    A-->C
-subgraph C[ItemC]
-    D[ItemD]==>E
-    E[ItemE]-->F[ItemF]
-end
+    A[ItemA]--> ItemB
+    A--> ItemC
+    subgraph ItemC
+        D[ItemD]-->E[ItemE]
+        E-->D
+    end
+
+    X[ItemX]==>Decision
+    click X "https://mermaid.js.org/"
+    Decision{Item Y?}==>|Yes| Y[ItemY]
+    Decision==>|No| Z[ItemZ]
 ```
 
 ## Pie chart
