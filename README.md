@@ -7,6 +7,14 @@ flowchart LR
 ```
 
 ```mermaid
+flowchart LR
+    style ItemA fill:#C4F7A1, stroke:#7FC6A4
+    style ItemB fill:#FFEC51, stroke:#FFEC51  
+    style ItemC fill:#FFC4EB, stroke:#FAF33E 
+    ItemA-->ItemB-->ItemC
+```
+
+```mermaid
 graph TB
     A[ItemA]-->B[ItemB]-->C[ItemC]
     A-->C
