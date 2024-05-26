@@ -164,7 +164,6 @@ root((Center node))
 stateDiagram
     [*] --> StateA
     StateA --> [*]
-
     StateA --> StateB
     StateB --> StateA
     StateB --> StateD
