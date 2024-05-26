@@ -173,14 +173,12 @@ stateDiagram
 ## Sequence chart
 ```mermaid
 sequenceDiagram
-    ParticipantA-->>ParticipantA: Dotted rounded arrow
-    ParticipantA->>ParticipantB: Dotted line arrow
-    Note left of ParticipantA: NOTE
-    ParticipantA-->>ParticipantC: Line arrow
+    ParticipantA->ParticipantB: Line
     ParticipantB-->ParticipantC: Dotted line
-    loop
-        ParticipantA->>ParticipantB: Loop text
-    end
+    ParticipantA->>ParticipantB: Line arrow
+    ParticipantA-->>ParticipantC: Dotted line arrow
+    ParticipantB->>ParticipantB: Rounded arrow
+    ParticipantC-->>ParticipantC: Dotted rounded arrow
 ```
 
 ### Use alias and autonumber
@@ -190,11 +188,13 @@ sequenceDiagram
     participant A as ParticipantA
     participant B as ParticipantB
     participant C as ParticipantC
-    A-->>A: Dotted rounded arrow
-    A-->>B: Dotted line arrow
-    Note left of A: NOTE
-    A->>C: Line arrow
+    A->B: Line
     B-->C: Dotted line
+    A->>B: Line arrow
+    A-->>C: Dotted line arrow
+    B->>B: Rounded arrow
+    C-->>C: Dotted rounded arrow
+    Note left of A: NOTE
     loop
         A->>B: Loop text
     end
