@@ -48,7 +48,7 @@ pie title Pie chart 2
 ```mermaid
 xychart-beta
     title "XY chart title"
-    x-axis [Jan, Feb, Mar, Apr, May, Jun]
+    x-axis "Purchase date" [Jan, Feb, Mar, Apr, May, Jun]
     y-axis "Y variable" 0 --> 100
     bar [50, 60, 75, 82, 75, 40]
     line [50, 45, 75, 82, 65, 55]
