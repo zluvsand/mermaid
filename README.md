@@ -209,8 +209,8 @@ erDiagram
 ## Class chart
 ```mermaid
 classDiagram
-    SuperClass <|-- SubclassA
-    SuperClass <|-- SubclassB
+    SuperClass --> SubclassA
+    SuperClass --> SubclassB: Note
     SuperClass : +int attribute1
     SuperClass : +str attribute2
     SuperClass: +method1()
