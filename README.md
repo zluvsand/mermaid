@@ -10,7 +10,7 @@ flowchart LR
 flowchart LR
     style ItemA fill:#C4F7A1, stroke:#7FC6A4
     style ItemB fill:#FFEC51, stroke:#FFEC51  
-    style ItemC fill:#FFC4EB, stroke:#FAF33E 
+    style ItemC fill:#FFC4EB, stroke:#FFC4EB 
     ItemA-->ItemB-->ItemC
 ```
 
