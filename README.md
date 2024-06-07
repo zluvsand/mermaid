@@ -1,4 +1,7 @@
 # Mermaid chart examples
+<a href="https://towardsdatascience.com/introduction-to-mermaid-graphs-in-markdown-080d4377cab4">
+<img src="https://img.shields.io/badge/READ ON MEDIUM-12100E?logo=medium&color=000&logoColor=white" />
+</a>
 
 ## Flow chart
 ```mermaid
